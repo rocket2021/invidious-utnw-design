@@ -11,7 +11,8 @@ body {
 
 header {
  background: #22242a;
- padding: 20px;	
+ padding: 20px;
+ left:0;
 }
 .left_area h3 {
  color: #fff;
