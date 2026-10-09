@@ -205,7 +205,7 @@ header {
 #sidebar_btn {
     cursor: pointer;
     font-size: 28px;
-    position: relative;
+    position: absolute;
     z-index: 1100;
 }
 
