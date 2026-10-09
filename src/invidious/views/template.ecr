@@ -27,7 +27,6 @@
 
     <link rel="stylesheet" href="/css/video-inv.css?v=<%= ASSET_COMMIT %>">
     <link rel="stylesheet" href="/css/index-utnw.css?v=<%= ASSET_COMMIT %>">
-    <script src="https://utnw.de/config/js/jquery.min.js" charset="utf-8"></script> 
 </head>
 
 <body class="<%= dark_mode.blank? ? "no" : dark_mode %>-theme">
@@ -209,29 +208,4 @@
         <% end %>
     <% end %>
 </body>
-<script type="text/javascript">
-    $(document).ready(function() {
-    $('.nav_btn').click(function() {
-        $('.mobile_nav_items').toggleClass('active');
-    });
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-      //jquery for toggle sub menus
-    $('.sub-btn').click(function() {
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-        });
-      //jquery for expand and collapse the sidebar
-    $('.menu-btn').click(function() {
-        $('.side-bar').addClass('active');
-        $('.menu-btn').css("visibility", "hidden");
-        });
-    $('.close-btn').click(function() {
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible");
-        });
-    });
-</script>
 </html>
