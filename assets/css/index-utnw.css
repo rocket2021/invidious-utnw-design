@@ -251,3 +251,55 @@ header {
   }
 }
 
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100vh;
+    background: #1b1b1b;
+    z-index: 1000;
+    padding-top: 80px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+}
+
+/* Sidebar öffnen */
+#check:checked ~ .pure-g .sidebar {
+    left: 0;
+}
+
+/* Checkbox verstecken */
+#check {
+    display: none;
+}
+
+/* Menü-Button */
+#sidebar_btn {
+    cursor: pointer;
+    font-size: 28px;
+    position: relative;
+    z-index: 1100;
+}
+
+/* Header über Sidebar */
+header {
+    position: relative;
+    z-index: 1101;
+}
+
+/* Sidebar-Links */
+.sidebar .feed-menu-item {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.sidebar .feed-menu-item:hover {
+    background: #333;
+}
+
